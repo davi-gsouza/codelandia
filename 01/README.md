@@ -29,7 +29,7 @@
 
 ## :writing_hand: Aprendizados
 
-Sendo o primeiro desafio que resolvi da Codelândia fiquei feliz e surpreso por ter conseguido terminar em alguns horas.
+Sendo o primeiro desafio que resolvi da Codelândia fiquei feliz e surpreso por ter conseguido terminar em algumas horas.
 Com esse projeto comecei a entender mais sobre position, display, variáveis CSS e medias queries, além de aprender a estruturar melhor o HTML.
 
 **Ideias de funcionalidades:**
