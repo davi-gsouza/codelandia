@@ -1,9 +1,9 @@
 <h1 align="center"> Desafio 1 - Blog </h1>
 
 <p align="center">
-**PT-BR:** Um projeto simples simulando um blog pessoal com artigos de tecnologia.<br/>
+PT-BR: Um projeto simples simulando um blog pessoal com artigos de tecnologia.<br/>
 
-**EN:** A simple project simulating a personal blog with technology articles.<br/>
+EN: A simple project simulating a personal blog with technology articles.<br/>
 
 </p>
 
