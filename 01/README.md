@@ -2,9 +2,9 @@
 
 <p align="center">
 PT-BR: Um projeto simples simulando um blog pessoal com artigos de tecnologia.<br/>
-
+</p>
+<p align="center">
 EN: A simple project simulating a personal blog with technology articles.<br/>
-
 </p>
 
 <p align="center">
