@@ -1,0 +1,226 @@
+:root {
+  --purple: #6c63ff;
+  --purple-light: #d7d4ff;
+  --white: #ffffff;
+  --white-200: #f9f9f9;
+  --gray: #555555;
+  --gray-dark: #2a2a2a;
+
+  --hover: #524bdb;
+
+  --font-lato: 'Lato', sans-serif;
+  --font-merriweather: 'Merriweather', serif;
+
+  --font-sm: 1.8rem; /* Lato */
+  --font-md: 2rem; /* Lato */
+  --font-md-2: 2.4rem; /* Merriweather */
+  --font-lg: 3.2rem; /* Merriweather */
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-200);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  font-family: var(--font-merriweather);
+  font-size: var(--font-lg);
+  font-weight: 400;
+  color: var(--gray-dark);
+}
+
+p {
+  font-family: var(--font-lato);
+  font-size: var(--font-sm);
+  line-height: 3rem;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+button {
+  width: 100%;
+  height: 5rem;
+  padding: 1.3rem 0rem;
+  font-family: var(--font-lato);
+  font-size: var(--font-md);
+  line-height: 2.4rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--white);
+  background-color: var(--purple);
+  box-shadow: 0px 5px 5px rgba(23, 23, 23, 0.1);
+  transition: 0.8s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--hover);
+}
+
+span {
+  display: block;
+  height: 20rem;
+}
+
+.flexbox {
+  display: flex;
+}
+
+/* Header */
+header {
+  padding: 8rem 8rem 12rem;
+  background-color: var(--purple-light);
+  gap: 5rem;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .info {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+header .info h1 {
+  max-width: 15ch;
+  width: 100%;
+  line-height: 4.7rem;
+}
+header .info p {
+  max-width: 35ch;
+  margin: 1.8rem 0rem 4.5rem;
+}
+header .info button {
+  width: 15.5rem;
+}
+
+/* Section Cards */
+section {
+  padding: 15rem 8rem;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 7rem;
+  justify-content: space-between;
+}
+section .card {
+  flex-grow: 1;
+  width: 34rem;
+  background-color: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+section .card .card-info {
+  gap: 2.6rem;
+  flex-direction: column;
+  padding: 3rem;
+}
+section .card h2 {
+  font-size: var(--font-md-2);
+  line-height: 3rem;
+  font-weight: 700;
+}
+section .card p {
+  width: 25ch;
+}
+section .card:nth-child(1) span {
+  background-color: #ff6363;
+}
+section .card:nth-child(2) span {
+  background-color: #63ecff;
+}
+section .card:nth-child(3) span {
+  background-color: #f363ff;
+}
+section .card:nth-child(4) span {
+  background-color: #63ff73;
+}
+section .card:nth-child(5) span {
+  background-color: #ffdd63;
+}
+section .card:nth-child(6) span {
+  background-color: #6663ff;
+}
+
+/* Footer */
+footer {
+  padding: 8rem;
+  background-color: var(--purple-light);
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
+  text-align: center;
+  line-height: 4rem;
+  margin-bottom: 6rem;
+}
+footer form {
+  width: 100%;
+  max-width: 47rem;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+footer form input,
+footer form textarea {
+  font-family: var(--font-lato);
+  font-size: var(--font-sm);
+  padding: 2rem 1.5rem;
+  resize: none;
+  border: none;
+  border-radius: 6px;
+  outline-color: var(--purple);
+  background-color: var(--white);
+}
+footer form input::placeholder,
+footer form textarea::placeholder {
+  font-size: var(--font-sm);
+  line-height: 2.2rem;
+  font-weight: 400;
+  color: rgba(110, 114, 117, 0.74);
+}
+
+@media screen and (max-width: 768px) {
+  header .info h1,
+  header .info p,
+  section .card p {
+    max-width: 100%;
+  }
+  header {
+    padding: 5.5rem 2rem 8rem;
+    gap: 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header .info p {
+    margin: 1.8rem 0rem 3.2rem;
+  }
+  section {
+    padding: 7.5rem 2rem;
+    gap: 2rem;
+    justify-content: center;
+  }
+  section .card {
+    max-width: 100%;
+  }
+  footer {
+    padding: 8rem 2rem 5.5rem;
+  }
+  footer h2 {
+    margin-bottom: 3rem;
+  }
+}
